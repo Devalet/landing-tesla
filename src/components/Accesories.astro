@@ -1,0 +1,42 @@
+---
+import Section from './Section.astro'
+---
+
+<Section
+  title='Accessories'
+  subtitle=''
+  color='black'
+  id='accesories'
+>
+<div slot='footer' class='gap-x-6 flex mx-auto pb-10'>
+  <a
+  class='border-[3px] border-transparent bg-white/80 text-sm backdrop-blur-sm rounded font-medium text-black px-24 py-2 inline-block transition-colors'
+      
+      href='#'
+    >
+    Shop now</a
+  >
+</div>
+
+<div slot='details'>
+    <ul
+      class='transition-colors duration-500 flex justify-center text-sm [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2 text-gray-300 text-[12px]'
+    >
+      <li><a href='#'>Tesla © 2023</a></li>
+      <li><a href='#'>Privacy & Legal</a></li>
+      <li><a href='#'>Vehicle Recalls</a></li>
+      <li><a href='#'>Contact</a></li>
+      <li><a href='#'>News</a></li>
+      <li><a href='#'>Get Updates</a></li>
+      <li><a href='#'>Locations</a></li>
+    </ul>
+</div>
+
+  <img
+    slot='background'
+    alt='accesories'
+    class='h-full w-full object-cover object-center bg-image'
+    src='accessories.avif'
+    id='bg-image-modely'
+  />
+</Section>

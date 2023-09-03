@@ -1,24 +1,44 @@
 ---
-import ChargeSection from '../components/ChargeSection.astro';
-import HeroSection from '../components/HeroSection.astro';
-import LandingHeader from '../components/LandingHeader.astro';
+import Accesories from '../components/Accesories.astro';
+import LandingHeader from '../components/LandingHeader.astro'
+import ModelS from '../components/ModelS.astro';
+import ModelX from '../components/ModelX.astro';
+import ModelY from '../components/ModelY.astro';
+import ModelThree from '../components/modelThree.astro';
+import SolarsPanel from '../components/SolarsPanel.astro';
+import SolarRoof from '../components/SolarRoof.astro';
+import PowerWall from '../components/PowerWall.astro';
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title='Tesla - Las fumadas de Elon'>
-	<LandingHeader />
-  <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth">
-		<div class="snap-center">
-			<HeroSection />
-		</div>
-		<div class="snap-center">
-			<ChargeSection />
-		</div>
-		<div class="snap-center">
-			<HeroSection />
-		</div>
-		<div class="snap-center">
-			<ChargeSection />
-		</div>
+  <LandingHeader />
+  <main
+    class='snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth'
+  >
+    <div class='snap-center'>
+      <ModelThree />
+    </div>
+    <div class='snap-center'>
+      <ModelY />
+    </div>
+    <div class='snap-center'>
+      <ModelS />
+    </div>
+    <div class='snap-center'>
+      <ModelX />
+    </div>
+    <div class='snap-center'>
+      <SolarsPanel />
+    </div>
+    <div class='snap-center'>
+      <SolarRoof />
+    </div>
+    <div class='snap-center'>
+      <PowerWall />
+    </div>
+    <div class='snap-center'>
+      <Accesories />
+    </div>
   </main>
 </Layout>

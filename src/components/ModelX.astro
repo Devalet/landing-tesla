@@ -1,0 +1,43 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="Model X"
+  subtitle="After Federal Tax Credit & Est. Gas Savings"
+  price='From $68,590*'
+  color="black"
+  id="model-x"
+>
+<div slot='footer' class='gap-x-6 flex mx-auto pb-2'>
+  <a
+  class='border-[3px] border-transparent bg-white/80 text-sm backdrop-blur-sm rounded font-medium text-black px-24 py-2 inline-block transition-colors'
+      
+      href='#'
+    >
+    Order Now</a
+  >
+  <a
+  class='border-[3px] border-transparent bg-neutral-800/70 text-sm backdrop-blur-sm rounded font-medium text-white px-24 py-2 inline-block transition-colors'
+      href='#'
+    >
+    Demo Drive</a
+  >
+</div>
+
+  <div slot='details' class='flex-col mt-4 text-center px-10 text-white text-[80%]'>
+    <p>
+      *Price before incentives and savings is $79,990, excluding taxes and fees. Subject to change.
+      <br />
+      <a class='border-white border-b-[1px] hover:border-b-[2px] transition-border duration-75' >Learn about est. gas savings.</a>
+    </p>
+  </div>
+
+  <img
+    slot="background"
+    alt="Model X"
+    class="h-full w-full object-cover object-center bg-image"
+    src="model-x.avif"
+    id="bg-image-modely"
+  />
+</Section>
